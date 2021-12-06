@@ -1,0 +1,5 @@
+<resources>
+    <string name="app_name">Alzheimer</string>
+
+    <string name="login_text">Login</string>
+</resources>
