@@ -21,8 +21,8 @@ class MainActivity : AppCompatActivity() {
         val passwordInput = findViewById<TextInputEditText>(R.id.passwordInput)
 
 
-        val button = findViewById<Button>(R.id.loginButton)
-        button.setOnClickListener {
+        val loginButton = findViewById<Button>(R.id.loginButton)
+        loginButton.setOnClickListener {
             val usernameVal = usernameInput.text.toString()
             val passwordVal = passwordInput.text.toString()
 
@@ -59,10 +59,16 @@ class MainActivity : AppCompatActivity() {
             }
 
             if (ok) {
-                val intent = Intent(this, HomeActivity::class.java)
+                val intent = Intent(this@MainActivity, HomeActivity::class.java)
                 startActivity(intent)
             }
         }
+        val registerButton = findViewById<Button>(R.id.registerButton)
+        registerButton.setOnClickListener {
+            val intent = Intent(this@MainActivity, RegisterActivity::class.java)
+            startActivity(intent)
+        }
+
     }
 
 

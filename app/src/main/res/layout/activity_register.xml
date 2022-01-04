@@ -4,7 +4,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".MainActivity">
+    tools:context=".RegisterActivity">
 
     <com.google.android.material.textfield.TextInputEditText
         android:id="@+id/usernameInput"
@@ -20,17 +20,6 @@
         app:layout_constraintVertical_chainStyle="spread"
         />
 
-    <TextView
-        android:id="@+id/usernameError"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-
-        android:text="Error"
-        android:textColor="@color/red"
-        android:textSize="14sp"
-
-        app:layout_constraintTop_toBottomOf="@id/usernameInput"
-        />
 
     <com.google.android.material.textfield.TextInputEditText
         android:id="@+id/passwordInput"
@@ -46,42 +35,16 @@
         app:layout_constraintBottom_toBottomOf="parent"
         />
 
-    <TextView
-        android:id="@+id/passwordError"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-
-        android:text="Error"
-        android:textColor="@color/red"
-        android:textSize="14sp"
-
-        app:layout_constraintTop_toBottomOf="@id/passwordInput"
-        />
-
     <Button
-        android:id="@+id/loginButton"
+        android:id="@+id/registerUserButton"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
 
-        android:text="@string/loginText"
+        android:text="@string/registerText"
 
         app:layout_constraintTop_toBottomOf="@id/passwordInput"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintStart_toStartOf="@id/passwordInput"
         app:layout_constraintEnd_toEndOf="@id/passwordInput"
         />
-
-    <Button
-        android:id="@+id/registerButton"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-
-        android:text="@string/registerText"
-
-        app:layout_constraintTop_toBottomOf="@id/loginButton"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintStart_toStartOf="@id/loginButton"
-        app:layout_constraintEnd_toEndOf="@id/loginButton"
-        />
-
 </androidx.constraintlayout.widget.ConstraintLayout>

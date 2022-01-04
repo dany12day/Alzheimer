@@ -1,5 +1,16 @@
 <resources>
     <string name="app_name">Alzheimer</string>
 
-    <string name="login_text">Login</string>
+    <string name="loginText">Login</string>
+    <string name="registerText">Register</string>
+    <string name="reminderMedicineText">Reminder Medicine</string>
+    <string name="homeRouteText">Home Route</string>
+    <string name="emergencyText">Emergency</string>
+    <string name="personalInfoText">Personal Info</string>
+    <string name="patientInfoConfigurationText">Patient Configuration</string>
+    <string name="messengerText">Messenger</string>
+    <string name="NearPharmaciesText">Near Pharmacies</string>
+    <string name="notesText">Notes</string>
+    <string name="documentsText">documents</string>
+    <string name="logOutText">Logout</string>
 </resources>
