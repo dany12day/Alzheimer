@@ -1,0 +1,89 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".ReminderMedicine.ReminderDetailsActivity">
+
+    <TextView
+        android:id="@+id/reminderName"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+
+        android:textSize="36sp"
+        android:textStyle="bold"
+        android:textColor="@color/black"
+
+        tools:text="name"
+
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        />
+
+    <TextView
+        android:id="@+id/reminderMessage"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+
+        android:textSize="36sp"
+        android:textStyle="bold"
+        android:textColor="@color/black"
+
+        tools:text="message"
+
+        app:layout_constraintTop_toBottomOf="@id/reminderName"
+        app:layout_constraintStart_toStartOf="parent"
+        />
+
+    <TextView
+        android:id="@+id/reminderHours"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+
+        android:textSize="36sp"
+        android:textStyle="bold"
+        android:textColor="@color/black"
+
+        tools:text="hour"
+
+        app:layout_constraintTop_toBottomOf="@id/reminderMessage"
+        app:layout_constraintStart_toStartOf="parent"
+        />
+
+    <TextView
+        android:id="@+id/reminderDays"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+
+        android:textSize="36sp"
+        android:textStyle="bold"
+        android:textColor="@color/black"
+
+        tools:text="days"
+
+        app:layout_constraintTop_toBottomOf="@id/reminderHours"
+        app:layout_constraintStart_toStartOf="parent"
+        />
+
+    <Button
+        android:id="@+id/reminderDelete"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Delete"
+
+        app:layout_constraintTop_toBottomOf="@id/reminderDays"
+        app:layout_constraintStart_toStartOf="parent"
+        />
+
+    <Button
+        android:id="@+id/reminderModify"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Modify"
+
+        app:layout_constraintTop_toBottomOf="@id/reminderDelete"
+        app:layout_constraintStart_toStartOf="parent"
+        />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

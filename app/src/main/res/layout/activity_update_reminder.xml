@@ -1,0 +1,140 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".ReminderMedicine.UpdateReminderActivity">
+
+    <TextView
+        android:id="@+id/updateReminderNameText"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+
+        android:textSize="36sp"
+        android:textStyle="bold"
+        android:textColor="@color/black"
+
+        tools:text="Name:"
+
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        />
+
+    <com.google.android.material.textfield.TextInputEditText
+        android:id="@+id/updateReminderName"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+
+        android:hint="Name"
+
+        app:layout_constraintTop_toBottomOf="@id/updateReminderNameText"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintVertical_chainStyle="spread"
+        />
+
+    <TextView
+        android:id="@+id/updateReminderMessageText"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+
+        android:textSize="36sp"
+        android:textStyle="bold"
+        android:textColor="@color/black"
+
+        tools:text="Message"
+
+        app:layout_constraintTop_toBottomOf="@id/updateReminderName"
+
+        tools:ignore="MissingConstraints" />
+
+    <com.google.android.material.textfield.TextInputEditText
+        android:id="@+id/updateReminderMessage"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+
+        android:hint="Message"
+
+        app:layout_constraintTop_toBottomOf="@id/updateReminderMessageText"
+        />
+
+    <TextView
+        android:id="@+id/updateReminderTimeText"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+
+        android:textSize="36sp"
+        android:textStyle="bold"
+        android:textColor="@color/black"
+
+        tools:text="Time:"
+
+        app:layout_constraintTop_toBottomOf="@id/updateReminderMessage"
+
+        tools:ignore="MissingConstraints" />
+
+    <com.google.android.material.textfield.TextInputEditText
+        android:id="@+id/updateReminderTime"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+
+        android:hint="Time Format Hour:Minute:Seconds"
+
+        app:layout_constraintTop_toBottomOf="@id/updateReminderTimeText"
+        />
+
+    <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        android:id="@+id/updateCheckboxReminder"
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:layout_constraintTop_toBottomOf="@+id/updateReminderTime"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintVertical_chainStyle="spread">
+
+
+        <CheckBox android:id="@+id/checkboxMonday"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Monday"/>
+        <CheckBox android:id="@+id/checkboxTuesday"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Tuesday"/>
+        <CheckBox android:id="@+id/checkboxWednesday"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Wednesday"/>
+        <CheckBox android:id="@+id/checkboxThursday"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Thursday"/>
+        <CheckBox android:id="@+id/checkboxFriday"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Friday"/>
+        <CheckBox android:id="@+id/checkboxSaturday"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Saturday"/>
+        <CheckBox android:id="@+id/checkboxSunday"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Sunday "/>
+    </LinearLayout>
+
+    <Button
+        android:id="@+id/updateReminder"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+
+        android:text="Update reminder"
+
+        app:layout_constraintTop_toBottomOf="@+id/updateCheckboxReminder"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
