@@ -7,14 +7,14 @@
     tools:context=".RegisterActivity">
 
     <com.google.android.material.textfield.TextInputEditText
-        android:id="@+id/usernameInput"
+        android:id="@+id/registerUsernameInput"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
 
         android:hint="Username"
 
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintBottom_toBottomOf="@+id/passwordInput"
+        app:layout_constraintBottom_toBottomOf="@+id/registerPasswordInput"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintVertical_chainStyle="spread"
@@ -22,14 +22,27 @@
 
 
     <com.google.android.material.textfield.TextInputEditText
-        android:id="@+id/passwordInput"
+        android:id="@+id/registerPasswordInput"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
 
         android:hint="Password"
         android:inputType="textPassword"
 
-        app:layout_constraintTop_toBottomOf="@+id/usernameInput"
+        app:layout_constraintTop_toBottomOf="@+id/registerUsernameInput"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintBottom_toBottomOf="parent"
+        />
+
+    <com.google.android.material.textfield.TextInputEditText
+        android:id="@+id/registerRoleInput"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+
+        android:hint="Role"
+
+        app:layout_constraintTop_toBottomOf="@+id/registerPasswordInput"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintBottom_toBottomOf="parent"
@@ -42,9 +55,9 @@
 
         android:text="@string/registerText"
 
-        app:layout_constraintTop_toBottomOf="@id/passwordInput"
+        app:layout_constraintTop_toBottomOf="@id/registerRoleInput"
         app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintStart_toStartOf="@id/passwordInput"
-        app:layout_constraintEnd_toEndOf="@id/passwordInput"
+        app:layout_constraintStart_toStartOf="@id/registerRoleInput"
+        app:layout_constraintEnd_toEndOf="@id/registerRoleInput"
         />
 </androidx.constraintlayout.widget.ConstraintLayout>
