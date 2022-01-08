@@ -4,6 +4,7 @@ import android.content.Intent
 import android.os.Bundle
 import android.widget.Button
 import androidx.appcompat.app.AppCompatActivity
+import com.example.alzheimer.Documents.DocumentsActivity
 import com.example.alzheimer.Notes.NotesActivity
 import com.example.alzheimer.Emergency.EmergencyActivity
 import com.example.alzheimer.Maps.HomeRouteActivity
@@ -47,6 +48,12 @@ class HomeActivity : AppCompatActivity(){
         val notes = findViewById<Button>(R.id.notesButton)
         notes.setOnClickListener {
             val intent = Intent(this@HomeActivity, NotesActivity::class.java)
+            startActivity(intent)
+        }
+
+        val documents = findViewById<Button>(R.id.documentsButton)
+        documents.setOnClickListener {
+            val intent = Intent(this@HomeActivity, DocumentsActivity::class.java)
             startActivity(intent)
         }
     }

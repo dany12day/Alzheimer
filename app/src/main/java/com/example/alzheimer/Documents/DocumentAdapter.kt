@@ -1,4 +1,4 @@
-package com.example.alzheimer.Notes
+package com.example.alzheimer.Documents
 
 import android.content.Context
 import android.view.LayoutInflater
@@ -8,11 +8,10 @@ import android.widget.BaseAdapter
 import android.widget.TextView
 import com.example.alzheimer.R
 
-class NotesAdapter(context: Context): BaseAdapter() {
-
+class DocumentAdapter(context: Context): BaseAdapter() {
     private val inflater: LayoutInflater = context.getSystemService(Context.LAYOUT_INFLATER_SERVICE) as LayoutInflater
     companion object{
-        private var dataSource: MutableList<NoteModel> = mutableListOf()
+        private var dataSource: MutableList<DocumentModel> = mutableListOf()
     }
 
     override fun getCount(): Int {
@@ -28,18 +27,16 @@ class NotesAdapter(context: Context): BaseAdapter() {
     }
 
     override fun getView(position: Int, convertView: View?, parent: ViewGroup?): View {
-        val itemView = inflater.inflate(R.layout.notes_list_item, parent, false)
-        val notesLabel = itemView.findViewById<TextView>(R.id.notesLabel)
-        val noteDateLabel = itemView.findViewById<TextView>(R.id.noteDateLabel)
-        val note = getItem(position) as NoteModel
+        val itemView = inflater.inflate(R.layout.document_list_item, parent, false)
+        val documentTitle = itemView.findViewById<TextView>(R.id.documentTitle)
+        val document = getItem(position) as DocumentModel
 
-        notesLabel.text = note.title
-        noteDateLabel.text = "${note.date.dayOfMonth} ${note.date.month} ${note.date.year}"
+        documentTitle.text = document.title
 
         return itemView
     }
 
-    fun setList(newList: MutableList<NoteModel>){
+    fun setList(newList: MutableList<DocumentModel>){
         dataSource = newList
         notifyDataSetChanged()
     }
