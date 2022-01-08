@@ -1,10 +1,10 @@
-package com.example.alzheimer
+package com.example.alzheimer.HomeRegisterLogin
 
 import android.content.Intent
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import android.widget.Button
-import android.widget.TextView
+import com.example.alzheimer.R
 import com.example.alzheimer.Util.UserInfo
 import com.example.alzheimer.Util.UsersList
 import com.google.android.material.textfield.TextInputEditText

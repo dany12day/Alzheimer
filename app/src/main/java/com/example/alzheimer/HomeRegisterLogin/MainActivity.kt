@@ -1,4 +1,4 @@
-package com.example.alzheimer
+package com.example.alzheimer.HomeRegisterLogin
 
 import android.content.Intent
 import androidx.appcompat.app.AppCompatActivity
@@ -6,6 +6,10 @@ import android.os.Bundle
 import android.view.View
 import android.widget.Button
 import android.widget.TextView
+import com.example.alzheimer.Maps.ImportantLocation
+import com.example.alzheimer.Maps.ImportantLocationsAdapter
+import com.example.alzheimer.R
+import com.example.alzheimer.ReminderMedicine.RemindersAdapter
 import com.example.alzheimer.Util.CurrentUser
 import com.example.alzheimer.Util.UserInfo
 import com.example.alzheimer.Util.UsersList
@@ -13,9 +17,21 @@ import com.google.android.material.textfield.TextInputEditText
 
 class MainActivity : AppCompatActivity() {
 
+    private lateinit var remindersAdapter: RemindersAdapter
+    private lateinit var importantLocationsAdapter: ImportantLocationsAdapter
+
+
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_main)
+
+        remindersAdapter = RemindersAdapter(
+            context = this,
+        )
+
+        importantLocationsAdapter = ImportantLocationsAdapter(
+            context = this,
+        )
 
         val usernameError = findViewById<TextView>(R.id.usernameError)
         val passwordError = findViewById<TextView>(R.id.passwordError)
@@ -84,8 +100,9 @@ class MainActivity : AppCompatActivity() {
         while (numbersIterator.hasNext()) {
             var user : UserInfo = numbersIterator.next()
             if (username == user.username) {
-                CurrentUser.role = user.role.toString()
-                CurrentUser.username = user.username.toString()
+                CurrentUser.userInfo = user
+                remindersAdapter.setList(user.userData.remindersList)
+                importantLocationsAdapter.setList(user.userData.importantLocations)
                 return Pair(true, -1)
             }
         }
