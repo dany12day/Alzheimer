@@ -84,11 +84,11 @@
         tools:ignore="MissingConstraints" />
 
     <Button
-        android:id="@+id/nearPharmaciesButton"
+        android:id="@+id/nearbyPharmaciesButton"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
 
-        android:text="@string/NearPharmaciesText"
+        android:text="@string/nearbypharmaciesbuttontext"
         app:layout_constraintBottom_toTopOf="@+id/reminderMedicineButton"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.5"

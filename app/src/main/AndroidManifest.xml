@@ -10,16 +10,27 @@
         android:supportsRtl="true"
         android:theme="@style/Theme.Alzheimer">
         <activity
-            android:name="com.example.alzheimer.ReminderMedicine.UpdateReminderActivity"
+            android:name=".MainActivity2"
+            android:exported="false"
+            android:label="@string/title_activity_main2"
+            android:theme="@style/Theme.Alzheimer.NoActionBar" />
+        <activity
+            android:name=".Notes.NotesActivity"
             android:exported="false" />
         <activity
-            android:name="com.example.alzheimer.ReminderMedicine.CreateReminderActivity"
+            android:name=".NearbyPharmaciesActivity"
             android:exported="false" />
         <activity
-            android:name="com.example.alzheimer.ReminderMedicine.ReminderDetailsActivity"
+            android:name=".ReminderMedicine.UpdateReminderActivity"
             android:exported="false" />
         <activity
-            android:name="com.example.alzheimer.ReminderMedicine.ReminderMedicineActivity"
+            android:name=".ReminderMedicine.CreateReminderActivity"
+            android:exported="false" />
+        <activity
+            android:name=".ReminderMedicine.ReminderDetailsActivity"
+            android:exported="false" />
+        <activity
+            android:name=".ReminderMedicine.ReminderMedicineActivity"
             android:exported="false" />
         <activity
             android:name=".HomeActivity"

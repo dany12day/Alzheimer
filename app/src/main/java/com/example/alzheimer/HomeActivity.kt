@@ -4,6 +4,7 @@ import android.content.Intent
 import android.os.Bundle
 import android.widget.Button
 import androidx.appcompat.app.AppCompatActivity
+import com.example.alzheimer.Notes.NotesActivity
 import com.example.alzheimer.ReminderMedicine.ReminderMedicineActivity
 
 class HomeActivity : AppCompatActivity(){
@@ -30,6 +31,18 @@ class HomeActivity : AppCompatActivity(){
         emergencyButton.setOnClickListener {
 
             val intent = Intent(this@HomeActivity, EmergencyActivity::class.java)
+            startActivity(intent)
+        }
+
+        val nearbyPharmacies = findViewById<Button>(R.id.nearbyPharmaciesButton)
+        nearbyPharmacies.setOnClickListener{
+            val intent = Intent(this@HomeActivity, NearbyPharmaciesActivity::class.java)
+            startActivity(intent)
+        }
+
+        val notes = findViewById<Button>(R.id.notesButton)
+        notes.setOnClickListener {
+            val intent = Intent(this@HomeActivity, NotesActivity::class.java)
             startActivity(intent)
         }
     }
