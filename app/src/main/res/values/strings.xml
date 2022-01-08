@@ -26,5 +26,9 @@
     <string name="new_note">New Note</string>
     <string name="title_activity_maps">MapsActivity</string>
     <string name="selectRoute">Select Route</string>
-    <string name="call">Call</string>
+    <string name="create_new_activity">Create New Activity</string>
+    <string name="title">Title</string>
+    <string name="note_content">Note Content</string>
+    <string name="add_note">Add note</string>
+    <string name="edit_note">Edit note</string>
 </resources>

@@ -11,7 +11,9 @@ import com.example.alzheimer.R
 class NotesAdapter(context: Context): BaseAdapter() {
 
     private val inflater: LayoutInflater = context.getSystemService(Context.LAYOUT_INFLATER_SERVICE) as LayoutInflater
-    private var dataSource: MutableList<NoteModel> = mutableListOf()
+    companion object{
+        private var dataSource: MutableList<NoteModel> = mutableListOf()
+    }
 
     override fun getCount(): Int {
         return dataSource.size
@@ -33,18 +35,13 @@ class NotesAdapter(context: Context): BaseAdapter() {
         val note = getItem(position) as NoteModel
 
         notesLabel.text = note.title
-        noteDateLabel.text = "" + note.date.dayOfMonth +"/" + note.date.month + "/" + note.date.year
+        noteDateLabel.text = "${note.date.dayOfMonth} ${note.date.month} ${note.date.year}"
 
         return itemView
     }
 
     fun removeNote(position: Int) {
         dataSource.removeAt(position)
-        notifyDataSetChanged()
-    }
-
-    fun addNote(note: NoteModel){
-        dataSource.add(note)
         notifyDataSetChanged()
     }
 
