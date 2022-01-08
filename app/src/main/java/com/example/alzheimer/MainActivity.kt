@@ -6,6 +6,8 @@ import android.os.Bundle
 import android.view.View
 import android.widget.Button
 import android.widget.TextView
+import com.example.alzheimer.Util.CurrentUser
+import com.example.alzheimer.Util.UserInfo
 import com.example.alzheimer.Util.UsersList
 import com.google.android.material.textfield.TextInputEditText
 
@@ -78,16 +80,14 @@ class MainActivity : AppCompatActivity() {
         username: String,
     ): Pair<Boolean, Int> {
 
-        if (username.length < 3) {
-            return Pair(false, 0)
-        }
-        if (username.isEmpty()) {
-            return Pair(false, 1)
-        }
         val numbersIterator =  UsersList.userList.iterator()
         while (numbersIterator.hasNext()) {
-            if (username == numbersIterator.next().username)
+            var user : UserInfo = numbersIterator.next()
+            if (username == user.username) {
+                CurrentUser.role = user.role.toString()
+                CurrentUser.username = user.username.toString()
                 return Pair(true, -1)
+            }
         }
 
 
@@ -98,10 +98,6 @@ class MainActivity : AppCompatActivity() {
         password: String,
     ): Pair<Boolean, Int> {
 
-        if (password.length < 6)
-            return Pair(false, 0)
-        if (password.isEmpty())
-            return Pair(false, 1)
         val numbersIterator =  UsersList.userList.iterator()
         while (numbersIterator.hasNext()) {
             if (password == numbersIterator.next().password)
