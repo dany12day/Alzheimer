@@ -17,7 +17,7 @@ class NotesActivity : AppCompatActivity() {
         setContentView(R.layout.activity_notes)
 
         notesList = findViewById<ListView>(R.id.notesList)
-        notesAdapter = NotesAdapter(this)
+        notesAdapter = NotesAdapter(context = this,)
         notesList.adapter = notesAdapter
         notesList.visibility = View.VISIBLE
     }

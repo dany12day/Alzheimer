@@ -1,5 +1,6 @@
 package com.example.alzheimer.Util
 
+import com.example.alzheimer.Emergency.Contact
 import com.example.alzheimer.Maps.ImportantLocation
 import com.example.alzheimer.Notes.NoteModel
 import com.example.alzheimer.ReminderMedicine.CustomDate
@@ -22,6 +23,11 @@ object UsersList {
                     Reminder("Medicine2", "Vitamins", CustomDate(DayOfTheWeek(mutableListOf(1,3,6)), 12, 0, 0)),
                     Reminder("Medicine3", "Sleeping pill", CustomDate(DayOfTheWeek(mutableListOf(1,2,3,4,5,6,7)), 21, 30, 0)),
                     Reminder("Medicine4", "Antibiotics", CustomDate(DayOfTheWeek(mutableListOf(1,3,5,7)), 15, 32, 50))
+                ),
+                mutableListOf(
+                    Contact("Doctor", "112302342"),
+                    Contact("Ana", "102234342"),
+                    Contact("Ioan", "101232342"),
                 ),
                 mutableListOf(
                     NoteModel(1, "Cumparaturi", "Prima oara cand ajung la un magazin trebuie sa cumpar paine, legume", LocalDateTime.now().minusDays(5)),

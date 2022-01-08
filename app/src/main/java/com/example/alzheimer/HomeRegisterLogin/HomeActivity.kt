@@ -5,7 +5,7 @@ import android.os.Bundle
 import android.widget.Button
 import androidx.appcompat.app.AppCompatActivity
 import com.example.alzheimer.Notes.NotesActivity
-import com.example.alzheimer.EmergencyActivity
+import com.example.alzheimer.Emergency.EmergencyActivity
 import com.example.alzheimer.Maps.HomeRouteActivity
 import com.example.alzheimer.NearbyPharmaciesActivity
 import com.example.alzheimer.R

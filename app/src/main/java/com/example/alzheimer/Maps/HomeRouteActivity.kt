@@ -7,7 +7,6 @@ import android.widget.ArrayAdapter
 import android.widget.Button
 import android.widget.Spinner
 import com.example.alzheimer.R
-import com.example.alzheimer.ReminderMedicine.RemindersAdapter
 
 class HomeRouteActivity : AppCompatActivity() {
 
@@ -21,7 +20,7 @@ class HomeRouteActivity : AppCompatActivity() {
             context = this,
         )
 
-        val spinner: Spinner = findViewById(R.id.spinner)
+        val spinner: Spinner = findViewById(R.id.mapsSpinner)
 
         val adapter: ArrayAdapter<String> =
             ArrayAdapter<String>(this, android.R.layout.simple_spinner_item, myAdapter.getImportantLocationsNameList())

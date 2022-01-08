@@ -26,4 +26,5 @@
     <string name="new_note">New Note</string>
     <string name="title_activity_maps">MapsActivity</string>
     <string name="selectRoute">Select Route</string>
+    <string name="call">Call</string>
 </resources>

@@ -1,11 +1,12 @@
-package com.example.alzheimer
+package com.example.alzheimer.Emergency
 
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
+import com.example.alzheimer.R
 
-class EmergencyActivity : AppCompatActivity() {
+class CallActivity : AppCompatActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
-        setContentView(R.layout.activity_emergency)
+        setContentView(R.layout.activity_call)
     }
 }
