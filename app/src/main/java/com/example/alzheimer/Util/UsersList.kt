@@ -1,9 +1,11 @@
 package com.example.alzheimer.Util
 
 import com.example.alzheimer.Maps.ImportantLocation
+import com.example.alzheimer.Notes.NoteModel
 import com.example.alzheimer.ReminderMedicine.CustomDate
 import com.example.alzheimer.ReminderMedicine.DayOfTheWeek
 import com.example.alzheimer.ReminderMedicine.Reminder
+import java.time.LocalDateTime
 
 object UsersList {
     val userList: MutableList<UserInfo> = mutableListOf(
@@ -20,6 +22,10 @@ object UsersList {
                     Reminder("Medicine2", "Vitamins", CustomDate(DayOfTheWeek(mutableListOf(1,3,6)), 12, 0, 0)),
                     Reminder("Medicine3", "Sleeping pill", CustomDate(DayOfTheWeek(mutableListOf(1,2,3,4,5,6,7)), 21, 30, 0)),
                     Reminder("Medicine4", "Antibiotics", CustomDate(DayOfTheWeek(mutableListOf(1,3,5,7)), 15, 32, 50))
+                ),
+                mutableListOf(
+                    NoteModel(1, "Cumparaturi", "Prima oara cand ajung la un magazin trebuie sa cumpar paine, legume", LocalDateTime.now().minusDays(5)),
+                    NoteModel(2, "Test Note", "Acesta este un test pentru notite, contine un titlu si un text", LocalDateTime.now().minusDays(2))
                 )
             )
         ),

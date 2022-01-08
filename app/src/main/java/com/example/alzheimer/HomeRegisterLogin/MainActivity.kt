@@ -8,6 +8,7 @@ import android.widget.Button
 import android.widget.TextView
 import com.example.alzheimer.Maps.ImportantLocation
 import com.example.alzheimer.Maps.ImportantLocationsAdapter
+import com.example.alzheimer.Notes.NotesAdapter
 import com.example.alzheimer.R
 import com.example.alzheimer.ReminderMedicine.RemindersAdapter
 import com.example.alzheimer.Util.CurrentUser
@@ -19,6 +20,7 @@ class MainActivity : AppCompatActivity() {
 
     private lateinit var remindersAdapter: RemindersAdapter
     private lateinit var importantLocationsAdapter: ImportantLocationsAdapter
+    private lateinit var notesAdapter: NotesAdapter
 
 
     override fun onCreate(savedInstanceState: Bundle?) {
@@ -30,6 +32,10 @@ class MainActivity : AppCompatActivity() {
         )
 
         importantLocationsAdapter = ImportantLocationsAdapter(
+            context = this,
+        )
+
+        notesAdapter = NotesAdapter(
             context = this,
         )
 
@@ -103,6 +109,7 @@ class MainActivity : AppCompatActivity() {
                 CurrentUser.userInfo = user
                 remindersAdapter.setList(user.userData.remindersList)
                 importantLocationsAdapter.setList(user.userData.importantLocations)
+                notesAdapter.setList(user.userData.notesList)
                 return Pair(true, -1)
             }
         }
@@ -122,5 +129,9 @@ class MainActivity : AppCompatActivity() {
         }
 
         return Pair(false, 2)
+    }
+
+    fun getNotesAdapter(): NotesAdapter {
+        return notesAdapter
     }
 }

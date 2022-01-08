@@ -7,6 +7,7 @@ data class UserInfo(var username: String? = null,
                     var role: String? = null,
                     var userData: UserData = UserData(
                         mutableListOf(),
+                        mutableListOf(),
                         mutableListOf()
                     )){
 
