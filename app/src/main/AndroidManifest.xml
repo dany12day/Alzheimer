@@ -18,7 +18,15 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/Theme.Alzheimer">
-
+        <activity
+            android:name=".Notes.EditNoteActivity"
+            android:exported="false" />
+        <activity
+            android:name=".Notes.NoteDetailsActivity"
+            android:exported="false" />
+        <activity
+            android:name=".Notes.CreateNoteActivity"
+            android:exported="false" />
         <!--
              The API key for Google Maps-based APIs is defined as a string resource.
              (See the file "res/values/google_maps_api.xml").
