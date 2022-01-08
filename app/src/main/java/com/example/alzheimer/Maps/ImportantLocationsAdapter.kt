@@ -10,6 +10,8 @@ import com.example.alzheimer.ReminderMedicine.DayOfTheWeek
 import com.example.alzheimer.ReminderMedicine.Reminder
 import com.example.alzheimer.ReminderMedicine.RemindersAdapter
 import com.example.alzheimer.Util.CurrentUser
+import com.example.alzheimer.Util.UserInfo
+import com.example.alzheimer.Util.UsersList
 
 class ImportantLocationsAdapter (
     private val context: Context,
@@ -37,6 +39,15 @@ class ImportantLocationsAdapter (
 
     fun getImportantLocationsList(): MutableList<ImportantLocation> {
         return importantLocationsList
+    }
+
+    fun getImportantLocationsNameList(): MutableList<String> {
+        var names : MutableList<String> = mutableListOf()
+        val numbersIterator =  importantLocationsList.iterator()
+        while (numbersIterator.hasNext()) {
+            numbersIterator.next().nameOfTheAddress?.let { names.add(it) }
+        }
+        return names
     }
 
     fun setList(importantLocationsListNew: MutableList<ImportantLocation>) {
