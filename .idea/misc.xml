@@ -4,13 +4,10 @@
     <option name="filePathToZoomLevelMap">
       <map>
         <entry key="..\:/OneDrive/.Android Studio/Alzheimer/app/src/main/res/layout/activity_create_reminder.xml" value="0.25" />
-        <entry key="..\:/OneDrive/.Android Studio/Alzheimer/app/src/main/res/layout/activity_emergency.xml" value="0.1828125" />
         <entry key="..\:/OneDrive/.Android Studio/Alzheimer/app/src/main/res/layout/activity_home.xml" value="0.30104166666666665" />
         <entry key="..\:/OneDrive/.Android Studio/Alzheimer/app/src/main/res/layout/activity_home_route.xml" value="0.36666666666666664" />
         <entry key="..\:/OneDrive/.Android Studio/Alzheimer/app/src/main/res/layout/activity_home_route_button.xml" value="0.36666666666666664" />
         <entry key="..\:/OneDrive/.Android Studio/Alzheimer/app/src/main/res/layout/activity_main.xml" value="0.22" />
-        <entry key="..\:/OneDrive/.Android Studio/Alzheimer/app/src/main/res/layout/activity_maps.xml" value="0.2864583333333333" />
-        <entry key="..\:/OneDrive/.Android Studio/Alzheimer/app/src/main/res/layout/activity_nearby_pharmacies.xml" value="0.20520833333333333" />
         <entry key="..\:/OneDrive/.Android Studio/Alzheimer/app/src/main/res/layout/activity_register.xml" value="0.25" />
         <entry key="..\:/OneDrive/.Android Studio/Alzheimer/app/src/main/res/layout/activity_reminder.xml" value="0.20520833333333333" />
         <entry key="..\:/OneDrive/.Android Studio/Alzheimer/app/src/main/res/layout/activity_reminder_details.xml" value="0.20520833333333333" />
@@ -19,6 +16,24 @@
         <entry key="..\:/OneDrive/.Android Studio/Alzheimer/app/src/main/res/layout/activity_update_reminder.xml" value="0.36666666666666664" />
         <entry key="..\:/OneDrive/.Android Studio/Alzheimer/app/src/main/res/layout/add_reminder.xml" value="0.20520833333333333" />
         <entry key="..\:/OneDrive/.Android Studio/Alzheimer/app/src/main/res/layout/item_reminder.xml" value="0.20520833333333333" />
+        <entry key="app/src/main/res/drawable/edit_text_border.xml" value="0.38358974358974357" />
+        <entry key="app/src/main/res/layout/activity_create_note.xml" value="0.359375" />
+        <entry key="app/src/main/res/layout/activity_create_reminder.xml" value="0.3401268115942029" />
+        <entry key="app/src/main/res/layout/activity_edit_note.xml" value="0.3734375" />
+        <entry key="app/src/main/res/layout/activity_emergency.xml" value="0.3401268115942029" />
+        <entry key="app/src/main/res/layout/activity_home.xml" value="0.3401268115942029" />
+        <entry key="app/src/main/res/layout/activity_home_route.xml" value="0.3401268115942029" />
+        <entry key="app/src/main/res/layout/activity_main.xml" value="0.3401268115942029" />
+        <entry key="app/src/main/res/layout/activity_main2.xml" value="0.3880208333333333" />
+        <entry key="app/src/main/res/layout/activity_nearby_pharmacies.xml" value="0.3401268115942029" />
+        <entry key="app/src/main/res/layout/activity_note_details.xml" value="0.3734375" />
+        <entry key="app/src/main/res/layout/activity_notes.xml" value="0.3401268115942029" />
+        <entry key="app/src/main/res/layout/activity_reminder_medicine.xml" value="0.3880208333333333" />
+        <entry key="app/src/main/res/layout/activity_update_reminder.xml" value="0.3880208333333333" />
+        <entry key="app/src/main/res/layout/content_main.xml" value="0.3880208333333333" />
+        <entry key="app/src/main/res/layout/fragment_first.xml" value="0.3880208333333333" />
+        <entry key="app/src/main/res/layout/fragment_second.xml" value="0.3880208333333333" />
+        <entry key="app/src/main/res/layout/notes_list_item.xml" value="0.3734375" />
       </map>
     </option>
   </component>
