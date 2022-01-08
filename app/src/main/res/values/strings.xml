@@ -13,4 +13,5 @@
     <string name="notesText">Notes</string>
     <string name="documentsText">documents</string>
     <string name="logOutText">Logout</string>
+    <string name="title_activity_maps">MapsActivity</string>
 </resources>

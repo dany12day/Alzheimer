@@ -1,4 +1,8 @@
 package com.example.alzheimer.Util
 
-data class UserData(var homeAddress: String? = null) {
+import com.example.alzheimer.Maps.ImportantLocation
+import com.example.alzheimer.Maps.ImportantLocationsAdapter
+import com.example.alzheimer.ReminderMedicine.Reminder
+
+data class UserData(var importantLocations: MutableList<ImportantLocation> = mutableListOf() , var remindersList: MutableList<Reminder> = mutableListOf()) {
 }

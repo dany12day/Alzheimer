@@ -1,9 +1,12 @@
-package com.example.alzheimer
+package com.example.alzheimer.HomeRegisterLogin
 
 import android.content.Intent
 import android.os.Bundle
 import android.widget.Button
 import androidx.appcompat.app.AppCompatActivity
+import com.example.alzheimer.EmergencyActivity
+import com.example.alzheimer.Maps.HomeRouteActivity
+import com.example.alzheimer.R
 import com.example.alzheimer.ReminderMedicine.ReminderMedicineActivity
 
 class HomeActivity : AppCompatActivity(){

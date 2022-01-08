@@ -7,6 +7,7 @@ import android.view.ViewGroup
 import android.widget.BaseAdapter
 import android.widget.TextView
 import com.example.alzheimer.R
+import com.example.alzheimer.Util.CurrentUser
 
 class RemindersAdapter (
     private val context: Context,
@@ -14,12 +15,7 @@ class RemindersAdapter (
 
     companion object {
 
-        private val remindersList: MutableList<Reminder> = mutableListOf(
-            Reminder("Medicine1", "Medicine for memory", CustomDate(DayOfTheWeek(mutableListOf(1,2,3,4,5,6,7)), 8, 0, 0)),
-            Reminder("Medicine2", "Vitamins", CustomDate(DayOfTheWeek(mutableListOf(1,3,6)), 12, 0, 0)),
-            Reminder("Medicine3", "Sleeping pill", CustomDate(DayOfTheWeek(mutableListOf(1,2,3,4,5,6,7)), 21, 30, 0)),
-            Reminder("Medicine4", "Antibiotics", CustomDate(DayOfTheWeek(mutableListOf(1,3,5,7)), 15, 32, 50))
-        )
+        private var remindersList: MutableList<Reminder> = mutableListOf()
 
         private var currentReminder: Reminder = Reminder("", "", CustomDate(DayOfTheWeek(mutableListOf()), 0, 0, 0))
     }
@@ -67,4 +63,10 @@ class RemindersAdapter (
         remindersList.add(reminder)
         notifyDataSetChanged()
     }
+
+    fun setList(remindersListNew: MutableList<Reminder>) {
+        remindersList = remindersListNew
+        notifyDataSetChanged()
+    }
+
 }
