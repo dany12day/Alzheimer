@@ -32,14 +32,10 @@
         android:id="@+id/documentsList"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:paddingTop="25dp"
         app:layout_behavior="@string/appbar_scrolling_view_behavior"
-        app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.0"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@id/documentGallerySeparator"
-        app:layout_constraintVertical_bias="1.0"
         tools:listitem="@layout/document_list_item" />
 
     <com.google.android.material.floatingactionbutton.FloatingActionButton

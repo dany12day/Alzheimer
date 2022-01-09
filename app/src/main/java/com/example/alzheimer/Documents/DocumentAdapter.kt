@@ -5,6 +5,7 @@ import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
 import android.widget.BaseAdapter
+import android.widget.ImageView
 import android.widget.TextView
 import com.example.alzheimer.R
 
@@ -29,9 +30,11 @@ class DocumentAdapter(context: Context): BaseAdapter() {
     override fun getView(position: Int, convertView: View?, parent: ViewGroup?): View {
         val itemView = inflater.inflate(R.layout.document_list_item, parent, false)
         val documentTitle = itemView.findViewById<TextView>(R.id.documentTitle)
+        val documentThumbnail = itemView.findViewById<ImageView>(R.id.documentThumbnail)
         val document = getItem(position) as DocumentModel
 
         documentTitle.text = document.title
+        documentThumbnail.setImageURI(document.imageUri)
 
         return itemView
     }

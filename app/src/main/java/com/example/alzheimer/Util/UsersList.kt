@@ -32,7 +32,8 @@ object UsersList {
                 mutableListOf(
                     NoteModel( "Cumparaturi", "Prima oara cand ajung la un magazin trebuie sa cumpar paine, legume", LocalDateTime.now().minusDays(5)),
                     NoteModel( "Test Note", "Acesta este un test pentru notite, contine un titlu si un text", LocalDateTime.now().minusDays(2))
-                )
+                ),
+                mutableListOf()
             )
         ),
         UserInfo("doctor", "doctor1", "doctor", UserData(mutableListOf(),mutableListOf())),
