@@ -1,6 +1,8 @@
 package com.example.alzheimer.Util
 
-import com.example.alzheimer.Maps.ImportantLocation
+import com.example.alzheimer.DataConfiguration.DataConfogurationModel
+import com.example.alzheimer.PersonalInformation.PersonalInfoModel
+
 
 data class UserInfo(var username: String? = null,
                     var password: String? = null,
@@ -9,7 +11,11 @@ data class UserInfo(var username: String? = null,
                         mutableListOf(),
                         mutableListOf(),
                         mutableListOf(),
-                        mutableListOf()
-                    )){
+                        mutableListOf(),
+                        mutableListOf(),
+                    ),
+                    var personalInfo: PersonalInfoModel = PersonalInfoModel(),
+                    var dataConf: DataConfogurationModel = DataConfogurationModel()
+){
 
 }

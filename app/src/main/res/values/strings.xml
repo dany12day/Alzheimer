@@ -32,4 +32,15 @@
     <string name="add_note">Add note</string>
     <string name="edit_note">Edit note</string>
     <string name="call">Call</string>
+    <string name="name">Name</string>
+    <string name="BirthDate">Birth Date</string>
+    <string name="address">Address</string>
+    <string name="licensePlate">License Plate</string>
+    <string name="phoneNumber">Phone Number</string>
+    <string name="Chat">Chat</string>
+    <string name="send">send</string>
+    <string name="username">username</string>
+    <string name="chat_menu_design_1">design 1</string>
+    <string name="chat_menu_design_2">design 2</string>
+    <string name="chat_menu_both_designs">both design</string>
 </resources>
