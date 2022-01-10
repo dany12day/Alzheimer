@@ -13,8 +13,7 @@ data class UserData(
     var remindersList: MutableList<Reminder> = mutableListOf(),
     var contactsList: MutableList<Contact> = mutableListOf(),
     var notesList: MutableList<NoteModel> = mutableListOf(),
-    var documentsList: MutableList<DocumentModel> = mutableListOf()
-    var notesList: MutableList<NoteModel> = mutableListOf(),
+    var documentsList: MutableList<DocumentModel> = mutableListOf(),
     var familyList:MutableList<FamilyModel> = mutableListOf()
 
 )

@@ -29,6 +29,7 @@ class MainActivity : AppCompatActivity() {
     private lateinit var notesAdapter: NotesAdapter
     private lateinit var contactsAdapter: ContactsAdapter
     private lateinit var documentsAdapter: DocumentAdapter
+    private lateinit var familyAdapter: FamilyAdapter
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)

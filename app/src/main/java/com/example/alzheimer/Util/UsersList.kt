@@ -34,8 +34,7 @@ object UsersList {
                     NoteModel( "Cumparaturi", "Prima oara cand ajung la un magazin trebuie sa cumpar paine, legume", LocalDateTime.now().minusDays(5)),
                     NoteModel( "Test Note", "Acesta este un test pentru notite, contine un titlu si un text", LocalDateTime.now().minusDays(2))
                 ),
-                mutableListOf()
-                ),
+                mutableListOf(),
                 mutableListOf(
                     FamilyModel("Maria", "0745213689"),
                     FamilyModel("Andreea", "0779856423"),
