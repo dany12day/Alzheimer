@@ -68,6 +68,9 @@
             android:name=".Emergency.EmergencyActivity"
             android:exported="false" />
         <activity
+            android:name=".Emergency.CallActivity"
+            android:exported="false" />
+        <activity
             android:name=".Maps.HomeRouteActivity"
             android:exported="false" />
         <activity
