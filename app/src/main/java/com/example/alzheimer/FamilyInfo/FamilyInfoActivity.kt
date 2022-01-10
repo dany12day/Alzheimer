@@ -5,6 +5,7 @@ import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import android.view.View
 import android.widget.ListView
+import com.example.alzheimer.Emergency.CallActivity
 import com.example.alzheimer.Notes.CreateNoteActivity
 import com.example.alzheimer.Notes.NotesAdapter
 import com.example.alzheimer.R
@@ -24,7 +25,10 @@ class FamilyInfoActivity : AppCompatActivity() {
 
         familyList.visibility = View.VISIBLE
 
-
+        familyList.setOnItemClickListener { _, _, position, _ ->
+            val intent = Intent(this, CallActivity::class.java)
+            startActivity(intent)
+        }
     }
 
     override fun onResume() {
