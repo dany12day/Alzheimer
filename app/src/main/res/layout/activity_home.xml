@@ -135,6 +135,19 @@
         app:layout_constraintTop_toBottomOf="@+id/notesButton"
         tools:ignore="MissingConstraints" />
 
+    <Button
+        android:id="@+id/ChatButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+
+        android:text="@string/Chat"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/patientInfoConfigurationButton"
+        tools:ignore="MissingConstraints" />
+
+
     <androidx.constraintlayout.widget.Barrier
         android:id="@+id/barrier2"
         android:layout_width="wrap_content"
@@ -149,5 +162,7 @@
         app:barrierDirection="top"
         app:constraint_referenced_ids="reminderMedicineButton,notesButton"
         tools:layout_editor_absoluteY="63dp" />
+
+
 
 </androidx.constraintlayout.widget.ConstraintLayout>

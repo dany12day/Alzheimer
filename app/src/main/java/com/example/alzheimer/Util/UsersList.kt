@@ -1,6 +1,7 @@
 package com.example.alzheimer.Util
 
 import com.example.alzheimer.Emergency.Contact
+import com.example.alzheimer.FamilyInfo.FamilyModel
 import com.example.alzheimer.Maps.ImportantLocation
 import com.example.alzheimer.Notes.NoteModel
 import com.example.alzheimer.ReminderMedicine.CustomDate
@@ -32,6 +33,11 @@ object UsersList {
                 mutableListOf(
                     NoteModel( "Cumparaturi", "Prima oara cand ajung la un magazin trebuie sa cumpar paine, legume", LocalDateTime.now().minusDays(5)),
                     NoteModel( "Test Note", "Acesta este un test pentru notite, contine un titlu si un text", LocalDateTime.now().minusDays(2))
+                ),
+                mutableListOf(
+                    FamilyModel("Maria", "0745213689"),
+                    FamilyModel("Andreea", "0779856423"),
+                    FamilyModel("Patricia", "0753214985"),
                 )
             )
         ),

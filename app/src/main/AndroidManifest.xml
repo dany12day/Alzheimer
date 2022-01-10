@@ -19,6 +19,18 @@
         android:supportsRtl="true"
         android:theme="@style/Theme.Alzheimer">
         <activity
+            android:name=".ChatActivity.ChatActivity"
+            android:exported="false" />
+        <activity
+            android:name=".DataConfiguration.DataConfigurationActivity"
+            android:exported="false" />
+        <activity
+            android:name=".FamilyInfo.FamilyInfoActivity"
+            android:exported="false" />
+        <activity
+            android:name=".PersonalInformation.Personallnformation"
+            android:exported="false" />
+        <activity
             android:name=".Notes.EditNoteActivity"
             android:exported="false" />
         <activity

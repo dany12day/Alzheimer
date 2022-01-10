@@ -6,11 +6,14 @@ import android.os.Bundle
 import android.view.View
 import android.widget.Button
 import android.widget.TextView
+import com.example.alzheimer.DataConfiguration.DataConfogurationModel
 import com.example.alzheimer.Emergency.ContactsAdapter
 import com.example.alzheimer.Emergency.EmergencyActivity
+import com.example.alzheimer.FamilyInfo.FamilyAdapter
 import com.example.alzheimer.Maps.ImportantLocation
 import com.example.alzheimer.Maps.ImportantLocationsAdapter
 import com.example.alzheimer.Notes.NotesAdapter
+import com.example.alzheimer.PersonalInformation.PersonalInfoModel
 import com.example.alzheimer.R
 import com.example.alzheimer.ReminderMedicine.RemindersAdapter
 import com.example.alzheimer.Util.CurrentUser
@@ -24,6 +27,7 @@ class MainActivity : AppCompatActivity() {
     private lateinit var importantLocationsAdapter: ImportantLocationsAdapter
     private lateinit var notesAdapter: NotesAdapter
     private lateinit var contactsAdapter: ContactsAdapter
+    private lateinit var familyAdapter: FamilyAdapter
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
@@ -42,6 +46,9 @@ class MainActivity : AppCompatActivity() {
         )
 
         contactsAdapter = ContactsAdapter(
+            context = this,
+        )
+        familyAdapter = FamilyAdapter(
             context = this,
         )
 
@@ -90,6 +97,8 @@ class MainActivity : AppCompatActivity() {
             }
 
             if (ok) {
+                CurrentUser.userInfo.personalInfo = PersonalInfoModel("Test", "25.10.1999", "Observatorului, Cluj", "CJ20JBN","0758963148")
+                CurrentUser.userInfo.dataConf = DataConfogurationModel("Test", "25.10.1999", "Observatorului, Cluj", "CJ20JBN","0758963148")
                 val intent = Intent(this@MainActivity, HomeActivity::class.java)
                 startActivity(intent)
             }
@@ -117,6 +126,8 @@ class MainActivity : AppCompatActivity() {
                 importantLocationsAdapter.setList(user.userData.importantLocationsList)
                 notesAdapter.setList(user.userData.notesList)
                 contactsAdapter.setList(user.userData.contactsList)
+                familyAdapter.setList(user.userData.familyList)
+
                 return Pair(true, -1)
             }
         }
