@@ -65,7 +65,7 @@ class HomeActivity : AppCompatActivity(){
             val intent = Intent(this@HomeActivity, DataConfigurationActivity::class.java)
             startActivity(intent)
         }
-        val chat = findViewById<Button>(R.id.ChatButton)
+        val chat = findViewById<Button>(R.id.messengerButton)
         chat.setOnClickListener {
             val intent = Intent(this@HomeActivity, ChatActivity::class.java)
             startActivity(intent)
