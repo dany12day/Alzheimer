@@ -43,4 +43,7 @@
     <string name="chat_menu_design_1">design 1</string>
     <string name="chat_menu_design_2">design 2</string>
     <string name="chat_menu_both_designs">both design</string>
+    <string name="nearby_pharmacies">Nearby Pharmacies</string>
+    <string name="user">User</string>
+    <string name="medicine_reminder">Medicine Reminder</string>
 </resources>

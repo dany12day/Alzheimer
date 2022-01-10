@@ -77,7 +77,7 @@
             android:name=".Notes.NotesActivity"
             android:exported="false" />
         <activity
-            android:name=".NearbyPharmaciesActivity"
+            android:name=".Pharmacies.NearbyPharmaciesActivity"
             android:exported="false" />
         <activity
             android:name=".ReminderMedicine.UpdateReminderActivity"
